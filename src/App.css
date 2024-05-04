@@ -1,0 +1,31 @@
+/* Custom properties/variables  */
+:root {
+    --secondary-background: #1e293b;
+    --main-background: #fff;
+    --main-white: #f0f0f0;
+    --main-red: #aa1e30;
+    --main-blue: #45567d;
+    --main-primary: #1e293b;
+    --main-secondary: rgb(142, 142, 142);
+    --primary-hover: #0284c7;
+    --secondary-hover: #737373;
+    --primary-font: #475569;
+    --secondary-font: #9ca3af;
+    --fontsize-sm: 1.4rem;
+    --fontsize-md: 1.6rem;
+    --fontsize-lg: 1.8rem;
+    --fontsize-xl: 2rem;
+    --fontsize-xxl: 3rem;
+}
+
+main {
+    margin: 0px auto;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100rem;
+}
+
+section {
+    margin: 0px auto;
+    padding: 10rem 0;
+}

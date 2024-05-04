@@ -1,0 +1,58 @@
+.fullWidth {
+    width: 100%;
+}
+
+.project {
+    padding: 15rem 0 0 0;
+}
+
+.gridContainer {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: auto;
+}
+
+@media (max-width: 640px) {
+    .project h1 {
+        font-size: var(--fontsize-md);
+        margin-bottom: 3rem;
+    }
+
+    .project {
+        margin: 0 3rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .project h1 {
+        font-size: var(--fontsize-xl);
+        margin-bottom: 3rem;
+    }
+
+    .project {
+        margin: 0 10rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .project h1 {
+        font-size: var(--fontsize-xl);
+        margin-bottom: 3rem;
+    }
+
+    .project {
+        margin: 0 13rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .project h1 {
+        font-size: var(--fontsize-xxl);
+        margin-bottom: 3rem;
+    }
+
+    .project {
+        margin: 0 13rem;
+    }
+}

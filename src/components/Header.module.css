@@ -1,0 +1,154 @@
+header {
+    color: white;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 133rem;
+    padding: 2.7rem 2rem;
+}
+
+.desktopNav>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.desktopNav li a {
+    color: #010103;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.mobileNav li a {
+    color: #010103;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.desktopNav li a:hover {
+    color: #ff4d30;
+}
+
+@media (max-width: 640px) {
+    .desktopNav {
+        display: none;
+    }
+
+    .navButtons {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    header {
+        font-size: var(--fontsize-sm);
+    }
+}
+
+@media (min-width: 640px) {
+
+    .desktopNav {
+        display: none;
+    }
+
+    .navButtons {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    header {
+        font-size: var(--fontsize-md);
+    }
+}
+
+@media (min-width: 768px) {
+    .menuIcon {
+        display: none !important;
+    }
+
+    .desktopNav {
+        display: block;
+    }
+
+    .navButtons {
+        display: block;
+    }
+
+    header {
+        font-size: var(--fontsize-lg);
+    }
+}
+
+@media (min-width: 1024px) {
+    .menuIcon {
+        display: none !important;
+    }
+
+    .desktopNav {
+        display: block;
+    }
+
+    .navButtons {
+        display: block;
+    }
+
+    header {
+        font-size: var(--fontsize-xl);
+    }
+}
+
+.mobileNav {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.closeButton {
+    position: absolute;
+    right: 2.2rem;
+    top: 2.8rem;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.mobileNav>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.closeButton:hover {
+    color: #ff4d30;
+}
+
+.menuIcon {
+    cursor: pointer;
+    height: 100%;
+}
+
+.menuIcon:hover {
+    color: #ff4d30;
+}
