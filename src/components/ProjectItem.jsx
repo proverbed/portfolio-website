@@ -19,7 +19,7 @@ export default function ProjectItem({
               <li key={itemIndex}>{item}</li>
             ))}
           </ul>
-          <div class={styles.projectLinks}>
+          <div className={styles.projectLinks}>
             <a
               href={github}
               aria-label="GitHub Link"
@@ -32,9 +32,9 @@ export default function ProjectItem({
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className={styles.icon}
               >
                 <title>GitHub</title>
@@ -53,9 +53,9 @@ export default function ProjectItem({
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className={styles.icon}
               >
                 <title>External Link</title>
